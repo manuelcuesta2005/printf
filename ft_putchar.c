@@ -11,7 +11,14 @@
 /* ************************************************************************** */
 #include <unistd.h>
 
-void	ft_putchar(char c)
+int	ft_putchar(int c)
 {
-		write(1, &c, 1);
+	write(1, &c, 1);
+	return (1);
+}
+
+int ft_putporcent(void)
+{
+	write(1, "%", 1);
+	return(1);
 }
